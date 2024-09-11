@@ -1,3 +1,4 @@
+## **If you expected to install and running this bot without knowledge of basic coding, you should stop and turn around now!**
 
 ## Installation:
 
