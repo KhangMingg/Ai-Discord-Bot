@@ -104,4 +104,4 @@ async def info_error(ctx, error):
         await ctx.send('I could not find that member...')
 
 
-bot.run(BOT_API)>
+bot.run(BOT_API)
