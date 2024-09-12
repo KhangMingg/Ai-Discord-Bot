@@ -7,15 +7,15 @@ Step 1: Download the project by git clone or download zip in the code button
 Step 2: install python 3.12.6: 
 https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe
 
-Step 3: install Discord.py
+Step 3: install Discord.py through CMD
 ```bash
    pip install discord.py
 ```
-Step 4: install Google generative AI
+Step 4: install Google generative AI through CMD
 ```bash
    pip install google-generativeai
 ```
-Step 5: install python dot-env
+Step 5: install python dot-env through CMD
 ```bash
    pip install python-dotenv
 ```
