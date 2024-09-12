@@ -22,6 +22,6 @@ Step 5: install python dot-env
 ## Configuration:
 Rename the .env.example file to .env and fill it with your Gemini API and Discord bot token
 ```bash
-  GEMINI_API="ENTER_YOUR_GEMINI_API_HERE!"
+  GEMINI_API="ENTER_YOUR_GEMINI_API_HERE!" #goto this link: https://aistudio.google.com/app/apikey
   BOT_API="ENTER_YOUR_DISCORD_BOT_TOKEN_HERE!"
 ```
