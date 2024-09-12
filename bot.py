@@ -6,21 +6,22 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_API = os.getenv('GEMINI_API')
-BOT_API = os.getenv('BOT_API')
+GEMINI_API = os.getenv('GEMINI_API') #Gemini API from .env
+BOT_API = os.getenv('BOT_API') #Discord bot token from .env 
 
-
+#Bot prefix: !
 bot = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
 
 client = discord.Client(intents = discord.Intents.all())
 
 genai.configure (api_key=GEMINI_API)
 
+#Gemini generation config
 generation_config = {
-  "temperature": 1,
+  "temperature": 1, #Ai creativity config, can be setted from 0 to 2
   "top_p": 0.95,
   "top_k": 64,
-  "max_output_tokens": 100,
+  "max_output_tokens": 100, #Maximum ammount of characters can be generated. 1 token = 4 english characters
   "response_mime_type": "text/plain",
 }
 
