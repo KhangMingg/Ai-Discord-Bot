@@ -21,7 +21,7 @@ generation_config = {
   "temperature": 1, #Ai creativity config, can be setted from 0 to 2
   "top_p": 0.95,
   "top_k": 64,
-  "max_output_tokens": 100, #Maximum ammount of characters can be generated. 1 token = 4 english characters
+  "max_output_tokens": 500, #Maximum ammount of characters can be generated. 1 token = 4 english characters
   "response_mime_type": "text/plain",
 }
 
