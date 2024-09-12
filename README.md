@@ -9,15 +9,15 @@ https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe
 
 Step 3: install Discord.py through CMD
 ```bash
-> pip install discord.py
+  pip install discord.py
 ```
 Step 4: install Google generative AI through CMD
 ```bash
-> pip install google-generativeai
+  pip install google-generativeai
 ```
 Step 5: install python dot-env through CMD
 ```bash
-> pip install python-dotenv
+  pip install python-dotenv
 ```
 ## Configuration:
 Rename the .env.example file to .env and fill it with your Gemini API and Discord bot token
