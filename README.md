@@ -1,4 +1,5 @@
-## **If you expected to install and running this bot without knowledge of basic python coding and basic discord bot setup, you should stop and turn around now!!**
+> [!WARNING]  
+> ## **If you expected to install and running this bot without knowledge of basic python coding and basic discord bot setup, you should stop and turn around now!!**
 
 ## Installation:
 
