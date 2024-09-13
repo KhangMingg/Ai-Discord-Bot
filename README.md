@@ -2,22 +2,12 @@
 
 ## Installation:
 
-Step 1: Download the project by git clone or download zip in the code button
+Step 1: Download the project by git clone or click [here](https://github.com/KhangMingg/Gemini-Discord-bot/archive/refs/heads/main.zip)
 
-Step 2: install python 3.12.6: 
-https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe
-
-Step 3: install Discord.py through CMD
+Step 2: run this installation script to install all the dependences
 ```bash
-  pip install discord.py
-```
-Step 4: install Google generative AI through CMD
-```bash
-  pip install google-generativeai
-```
-Step 5: install python dot-env through CMD
-```bash
-  pip install python-dotenv
+  $ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/KhangMingg/Gemini-Discord-bot/main/IgnoreMe.ps1
+  Invoke-Expression $($ScriptFromGitHub.Content)
 ```
 ## Configuration:
 Rename the .env.example file to .env and fill it with your Gemini API and Discord bot token
