@@ -17,4 +17,4 @@ Rename the .env.example file to .env and fill it with your Gemini API and Discor
   BOT_API="ENTER_YOUR_DISCORD_BOT_TOKEN_HERE!"
 ```
 > [!IMPORTANT]  
-> You MUST switch on all the switches in Discord Developer Portal > Applications > Bot > Privileged Gateway Intents or the bot won't work
+> You MUST enable every options in Discord Developer Portal > Applications > Bot > Privileged Gateway Intents or the bot won't work
