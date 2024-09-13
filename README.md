@@ -15,5 +15,5 @@ Rename the .env.example file to .env and fill it with your Gemini API and Discor
   GEMINI_API="ENTER_YOUR_GEMINI_API_HERE!" #goto this link: https://aistudio.google.com/app/apikey
   BOT_API="ENTER_YOUR_DISCORD_BOT_TOKEN_HERE!"
 ```
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
