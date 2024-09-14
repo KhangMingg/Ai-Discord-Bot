@@ -5,7 +5,7 @@
 
 Step 1: Download the project by git clone or click [here](https://github.com/KhangMingg/Gemini-Discord-bot/archive/refs/heads/main.zip)
 
-Step 2: run this installation script in **POWERSHELL** to install all the dependences
+Step 2: run this installation script in **POWERSHELL** to install all the dependences, no admin required
 ```bash
   $ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/KhangMingg/Gemini-Discord-bot/main/IgnoreMe.ps1
   Invoke-Expression $($ScriptFromGitHub.Content)
