@@ -14,7 +14,7 @@ Step 2: run this installation script in **POWERSHELL** to install all the depend
 Rename the .env.example file to .env and fill it with your Gemini API and Discord bot token
 ```bash
   GEMINI_API="ENTER_YOUR_GEMINI_API_HERE!" #goto this link: https://aistudio.google.com/app/apikey
-  BOT_API="ENTER_YOUR_DISCORD_BOT_TOKEN_HERE!"
+  BOT_TOKEN="ENTER_YOUR_DISCORD_BOT_TOKEN_HERE!"
 ```
 > [!IMPORTANT]  
 > You MUST enable every options in Discord Developer Portal > Applications > Bot > Privileged Gateway Intents or the bot won't work

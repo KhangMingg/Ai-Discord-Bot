@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_API = os.getenv('GEMINI_API') #Gemini API from .env
-BOT_API = os.getenv('BOT_API') #Discord bot token from .env 
+BOT_TOKEN = os.getenv('BOT_TOKEN') #Discord bot token from .env 
 
 #Bot prefix: !
 bot = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
@@ -107,4 +107,4 @@ async def info_error(ctx, error):
         await ctx.reply('I could not find that member...')
 
 
-bot.run(BOT_API)
+bot.run(BOT_TOKEN)
