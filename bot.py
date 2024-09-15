@@ -68,7 +68,7 @@ async def ai(ctx: commands.Context, *, prompt: str):
     response = model.generate_content(prompt)
 
     await ctx.reply(warn)
-    await ctx.send(response.text)
+    await ctx.reply(response.text)
 	
 
 @ai.error      
