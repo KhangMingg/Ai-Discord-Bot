@@ -59,33 +59,35 @@ async def on_ready():
 @bot.command(name = "usage")
 async def usage(ctx):
     msg = f'**Bot usage:**  !info  `<@username>`,   !ai  `<ask_me_anything>`,   !roles  `<@username>`'
-    await ctx.send(msg)
+    await ctx.reply(msg)
 
 
 @bot.command(name = "ai")
 async def ai(ctx: commands.Context, *, prompt: str):
-	response = model.generate_content(prompt)
+    warn = f'Your awnser is generating, please be patient!'
+    response = model.generate_content(prompt)
 
-	await ctx.reply(response.text)
+    await ctx.reply(warn)
+    await ctx.send(response.text)
 	
 
 @ai.error      
 async def ai_error(ctx, error):
     if isinstance(error, commands.BadArgument):
-        await ctx.send('**correct use:** `!gen <ask smth more than 5 characters>`')
+        await ctx.reply('**correct use:** `!gen <ask smth more than 5 characters>`')
 
 	
 @bot.command()
 async def info(ctx, *, member: discord.Member):
     """Tells you some info about the member."""
     msg = f'{member} joined on {member.joined_at} and has {len(member.roles)} roles.'
-    await ctx.send(msg)
+    await ctx.reply(msg)
 
 
 @info.error
 async def info_error(ctx, error):
     if isinstance(error, commands.BadArgument):
-        await ctx.send('I could not find that member...')
+        await ctx.reply('I could not find that member...')
 
 
 class MemberRoles(commands.MemberConverter):
@@ -96,13 +98,13 @@ class MemberRoles(commands.MemberConverter):
 @bot.command()
 async def roles(ctx, *, member: MemberRoles):
     """Tells you a member's roles."""
-    await ctx.send('I see the following roles: ' + ', '.join(member))
+    await ctx.reply('I see the following roles: ' + ', '.join(member))
 
 
 @roles.error
 async def info_error(ctx, error):
     if isinstance(error, commands.BadArgument):
-        await ctx.send('I could not find that member...')
+        await ctx.reply('I could not find that member...')
 
 
 bot.run(BOT_API)
