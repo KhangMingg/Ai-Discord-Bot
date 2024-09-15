@@ -64,7 +64,7 @@ async def usage(ctx):
 
 @bot.command(name = "ai")
 async def ai(ctx: commands.Context, *, prompt: str):
-    warn = f'Im generating your awnser, please be patient!'
+    warn = f'Note: Awnser more than 500 characters will not appear here'
     response = model.generate_content(prompt)
 
     await ctx.reply(warn)
