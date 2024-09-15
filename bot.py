@@ -25,7 +25,7 @@ generation_config = {
   "response_mime_type": "text/plain",
 }
 
-model = genai.GenerativeModel('gemini-pro',
+model = genai.GenerativeModel('gemini-1.5-flash',
 	safety_settings = [
     {
         "category": "HARM_CATEGORY_DANGEROUS",
